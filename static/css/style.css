@@ -1,0 +1,429 @@
+/* ==== Google font ==== */
+@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+/* === fontawesome === */
+@import url('all.css');
+/* ==== overwrite bootstrap standard ==== */
+@import url('overwrite.css');
+@import url('animate.css');
+
+/*==========================================================================
+  General_change styling in specific html tags
+  ========================================================================== */
+
+body { 
+	color:#777;
+	background: #f7f7f7;
+	font-size: 20px;
+	line-height: 1.6em;
+	font-weight: 300;
+	text-shadow: none;
+}
+
+.clear {
+	clear: both;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#222;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-style: normal;
+	margin: 0 0 20px 0;
+}
+
+h1 { font-size: 40px; line-height: 30px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+
+
+.text-bold {
+	font-weight: 900;
+}
+
+figure,footer,header,nav,section {
+	display: block;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+:focus {
+	outline: none;
+}
+
+/*==========================================================================
+  Adjust
+ ========================================================================== */
+
+.row {
+	z-index: 9999;
+}
+
+.content,.container {
+	overflow: hidden;
+}
+
+.color-white {
+	color: #fff;
+}
+
+
+/* --- align --- */
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+/* ---- padding ---- */
+
+.pad-top40 {
+	padding-top: 40px;
+}
+
+.pad-bot0 {
+	padding-bottom: 0;
+}
+
+.pad-bot5 {
+	padding-bottom: 5px;
+}
+
+.pad-bot30 {
+	padding-bottom: 30px;
+}
+
+.pad-bot40 {
+	padding-bottom: 40px;
+} 
+
+
+/* ---- margin --- */
+
+.mar-top30 {
+	margin-top: 30px;
+}
+
+.mar-top40 {
+	margin-top: 40px;
+}
+
+.mar-bot20 {
+	margin-bottom: 20px;
+}
+
+.mar-bot30 {
+	margin-bottom: 30px;
+}
+
+.mar-bot35 {
+	margin-bottom: 35px;
+}
+
+.mar-bot40 {
+	margin-bottom: 40px;
+}
+
+
+/*===========================
+  --- Sections ----
+=========================== */
+
+section.section {
+	margin:0;
+	padding: 100px 0 100px 0;
+}
+
+.bg-white { 
+	/* change background of the tool section*/
+	background-color: #E9F6FF;
+}
+
+.CNVD-logo{
+	vertical-align:text-top
+}
+
+/* --- section heading --- */
+
+.section-header {
+	text-align: center;
+}
+.section-header h2.section-heading {
+	text-transform: uppercase;
+	font-weight: 700;
+} 
+
+/* ==========================
+ --- spacer section ---
+============================= */
+
+#parallax1{	
+	background-image: url('/static/img/parallax/medical.png');
+}
+
+#testimonials{	
+	background-image: url('/static/img/parallax/medical.png');
+}
+
+/*===========================
+  --- Header & menu ----
+=========================== */
+
+.navbar {
+	line-height: 80px;
+	height: 80px;
+	background-color: rgba(0,0,0,0.3);
+	display: block;
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+.navbar .navbar-collapse {
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+.nav li {
+	height: 100%;
+	line-height: 100%;
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+.nav>li>a {
+	display: table-cell;
+	height: 100%;
+	line-height: 100%;
+	vertical-align: middle;
+	color: #fff;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+.nav>li>a:hover {
+	color: #fff;
+	background: none;
+}
+
+.navbar-nav {
+	float: right;
+	margin-bottom: 0;
+	padding-bottom:0;	
+}
+
+.navbar .navbar-nav > .active > a {
+	color: #fff;
+	
+}
+.navbar .navbar-nav > .active > a {
+	padding-bottom: 22px;
+}
+
+h1 a.navbar-brand {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 900;
+	text-shadow: none;
+}
+
+.navbar-brand {
+	padding: 0;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 90px;
+}
+
+.navbar-brand img {
+	vertical-align: middle;
+}
+
+.navbar-toggle {
+	padding: 0;
+	margin: 0;
+	width: 80px;
+}
+
+.navbar-collapse.in {
+	margin-top: -5px !important;
+}
+
+
+/*===========================
+  --- about website section ----
+=========================== */
+
+section.featured {
+	padding: 140px 0 60px;
+	background: #ffffff;
+	color: #000;
+}
+
+section.featured h2.slogan {
+	color: #000;
+	font-size: 48px;
+	font-weight: 900;
+}
+  
+.featured ul {
+	list-style: none;
+	padding:0;
+}
+
+/* --- tool section --- */
+
+a.btn {
+	color: #fff;
+}
+
+#inputfile input[type=file]{
+	width: 100%;
+	background-color: #26C3EF;
+	font-family: 'Open Sans', sans serif;
+	border: 0;
+	font-size:14px;
+	text-align: left;
+	vertical-align: middle;
+	padding:0 10px;
+}
+
+
+/*==========================
+About section
+=========================== */
+
+.member-photo {
+	box-sizing:border-box;
+	-webkit-border-radius:50%;
+		-moz-border-radius:50%;
+			border-radius:50%;	
+	margin: 0 0 20px 0;
+}
+.member-photo img {
+	-webkit-border-radius:50%;
+		-moz-border-radius:50%;
+			border-radius:50%;	
+}
+
+.team-detail h4 {
+	font-weight: 700;
+}
+
+
+
+/*=========================
+  Footer
+ ================= */
+
+section#footer {
+	background: #242424;
+	margin: 0;
+}
+
+section#footer .copyright {
+	text-align: center;
+}
+
+a.scrollup{
+	height:32px;
+	width:32px;
+	color:#fff;
+	font-size:18px;
+	line-height:32px;
+	text-align:center;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	z-index:9999;
+	opacity:0.5;
+}
+a.scrollup:hover{
+	opacity:1;
+	color:#fff;
+}
+
+
+/* buttons */
+
+.btn {
+	border: 25;
+	border-radius: 10px;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+.btn-theme:hover{
+
+	background-color: #1f3a64!important;
+	color: #fff;
+	border-color: #173058!important;
+}
+
+
+
+/* ========================================
+Media queries
+========================================= */
+
+@media (min-width: 959px) and (max-width: 1199px) {
+	.navbar-nav {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (min-device-width : 979px) and (max-device-width : 1024px)  {
+
+	.navbar-nav {
+		margin-top: 20px;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	.navbar-nav {
+		margin-top: 20px;
+	}
+}
+@media (max-width: 767px) {
+
+	.navbar.navbar-fixed-top {
+		background-color:rgba(0,0,0,1);
+	}
+	.navbar .navbar-collapse ul.nav {
+		background-color: #444;
+		width: 100%;
+		float: none;
+		margin:0;
+		padding:0;
+	}
+	.navbar .navbar-collapse ul.nav li {
+		border-bottom: 1px solid #666;
+	}
+	section.featured {
+		padding-top: 80px;
+	}
+	
+	.team-member,.col-lg-4 {
+		margin-bottom: 30px;
+	}
+
+}
+
+

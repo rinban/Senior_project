@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html class="no-js"> 
+
+    <head>
+
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Website page title  -->
+        <title>Copy Number Variation Detection with Machine Learning </title> 
+        <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Link to an external style sheet  -->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/isotope.css')}}" media="screen" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='js/fancybox/jquery.fancybox.css')}}" media="screen" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css')}}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-theme.css')}}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='skin/default.css')}}" />	
+
+    </head>
+
+    <body>
+		<!-- nivagation bar -->
+		<section id="header" class="appear">
+		<!-- outer-->
+		<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:80px; height:80px; background-color:rgba(0,0,0,1);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+			 <div class="container"> <!-- first inner -->
+				<div class="navbar-header"> 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="fa fa-bars color-white"></span>
+					</button>
+					<h1><a class="navbar-brand" data-0="line-height:90px;" data-300="line-height:50px;">			
+						CNVD </a></h1>
+				</div> 
+
+				<!-- naviagtion bar section link  -->
+				<div class="navbar-collapse collapse"> <!-- third -->
+					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+						<li class="active"><a href="#header">Home</a></li>
+						<li><a href="#section-model">Model</a></li>
+						<li><a href="#section-about">About</a></li>
+
+					</ul>
+				</div> 
+			</div> <!-- end first inner -->
+		</div> <!-- end first outer -->
+		</section>
+
+		<!-- about website -->
+		<section class="featured">
+				<div class="container">
+					<div class="row mar-bot40">
+						<div class="col-md-6 col-md-offset-3">
+							
+							<div class="align-center">
+								<figure class="CNVD-logo"><img src="/static/img/logo/zbVSF7BuFk.jpg" alt="CNVD-logo" height="400" width="600"/></figure>
+								<h2 class="slogan">Welcome to CNVD</h2>
+								<p>
+									A tool helps bioinformatics specialists that facilitates, improves and enhances detecting significant CNVs of the whole-exome test.  
+					
+								</p>	
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		
+		<!-- spacer section -->
+		<section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+		<div class="container">
+		</div>	
+		</section>
+
+		<!-- the tool -->
+		<section id="section-model" class="section pad-bot30 bg-white appear clearfix">
+		<div class="container"> <!-- outer -->
+
+			<h1 class="section-heading animated align-center" style="margin-bottom: 100px" 
+			data-animation="bounceInUp">CNVD Model</h1> <!-- header -->
+			
+			<div class="row mar-bot90" > <!-- first inner-->
+				<form action='/' method = 'POST' enctype="multipart/form-data" > <!-- form -->
+
+					<div class="col-lg-4" > <!--input section-->
+
+						<div class="align-center"> 
+							<i class="fas fa-file-upload fa-9x mar-bot30" style="color: #26C3EF"></i>
+							<h4 class="text-bold" style="margin-bottom: 70px;">Uplaod your CSV file </h4>
+							<!-- recieve input file -->
+							<!-- name attribute used in run.py -->
+							<input type="file" id="inputfile" name="file_inp"> 
+
+						</div> 
+
+						<!-- wrong message -->
+						<div class="align-left mar-top30" style= "color:crimson ; font-size: 20px;" > 
+							{{cross_mark}}
+							{{ wrong_message }} 
+						</div> 
+
+						<!-- successful message -->
+						<div class="align-left mar-top40" style= "color:green ; font-size: 20px;" > 
+							{{check_mark}}
+							{{ successful }} 
+						</div>
+						
+					</div> <!-- end input section-->
+
+					<div class="col-lg-4" > <!--start model section-->
+
+						<div class="align-center">
+							<i class="fas fa-brain fa-9x mar-bot30" style="color: #26C3EF"></i>
+							<h4 class="text-bold">Model</h4>
+							<!-- submit upload file to the run.py -->
+							<button type= "submit" class="btn btn-theme" id="downlaod" 
+							name="start" value= "start"> Start Model </button>
+						</div>
+
+						<!-- successful message -->
+						<div class="align-center mar-top30" style= "color:green ; font-size: 20px;" > 
+							{{check_mark}}
+							{{ successful }} 
+						</div>
+
+					</div> <!-- end start model section-->
+
+					<div class="col-lg-4" > <!-- download section-->
+						<div class="align-center">
+							<i class="fas fa-file-download fa-9x mar-bot35" style="color: #26C3EF"></i>
+							<h4 class="text-bold">Download outcome report</h4>
+							<!-- download pdf file -->
+							<button type= "submit" class="btn btn-theme" id="downlaod" 
+							name= "download" value= "download">
+								Downlaod </button>
+									
+						</div>
+
+					</div> <!-- end download section-->
+				
+
+				</form> <!-- end form -->
+			</div>	<!-- end first inner -->
+				
+		</div> <!-- end outer -->
+		</section>
+			
+		<!-- spacer section -->
+		<section id="testimonials" class="section" data-stellar-background-ratio="0.5">
+		<div class="container">
+		</div>	
+		</section>
+			
+		<!-- about -->
+		<section id="section-about" class="section appear clearfix">
+		<div class="container"> <!-- outer -->
+
+			<!-- header -->
+			<div class="row mar-bot40">  <!-- first inner -->
+				<div class="col-md-offset-3 col-md-6"> 
+					<div class="section-header"> 
+						
+						<h2 class="section-heading animated mar-bot40" 
+						data-animation="bounceInUp"> King AbdulAziz University </h2>
+						<p class= 'align-center mar-bot20'> Computer Science Department </p>
+
+					</div> 
+				</div>  
+			</div> <!-- end first inner -->
+			
+			<h2 class="section-heading animated align-center mar-bot40" 
+			data-animation="bounceInUp">Our Team</h2>
+
+			<div class="row align-center mar-top40 mar-bot40">  <!-- second inner -->
+				<!-- name of student in project -->
+				<div class="col-lg-4"> 
+					<div class="team-member"> 
+						<figure class="member-photo"><img src="/static/img/team/picture1.png" alt="" height="200" width="200"/></figure>
+						<div class="team-detail">
+							<h4>Reem Khalil</h4>
+						</div>
+					</div> 
+				</div> 
+
+				<div class="col-lg-4"> 
+					<div class="team-member"> 
+						<figure class="member-photo"><img src="/static/img/team/picture1.png" alt="" height="200" width="200"/></figure>
+						<div class="team-detail">
+							<h4>Shorog Batrah</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="team-member">
+						<figure class="member-photo"><img src="/static/img/team/picture1.png" alt="" height="200" width="200" /></figure>
+						<div class="team-detail">
+						<h4>Rinad Bankher</h4>
+						</div>
+					</div>
+				</div>
+
+			</div> <!-- end second inner -->
+
+			<!-- project aim  -->
+			<p class= 'align-center mar-top40'>Our project aims to help bioinformatics specialists develop a web-based system that facilitates, 
+						improves and enhances detecting significant CNV of one of the most 
+						critical genetic tests, which is the whole exome test. </p>
+
+		</div> <!-- end outer -->
+		</section>
+
+	<!-- arrow button forward to the page beginning -->
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+
+	<!-- points to an external script file  -->
+	<script src="/static/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="/static/js/jquery.js"></script>
+	<script src="/static/js/jquery.easing.1.3.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/jquery.isotope.min.js"></script>
+	<script src="/static/js/jquery.nicescroll.min.js"></script>
+	<script src="/static/js/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="/static/js/skrollr.min.js"></script>		
+	<script src="/static/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="/static/js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="/static/js/stellar.js"></script>
+	<script src="/static/js/jquery.appear.js"></script>
+	<script src="/static/js/main.js"></script>
+
+		<!-- page footer -->
+		<section id="footer" class="section footer pad-bot0">
+			<div class="container pad-bot5">
+				<div class="row align-center copyright">
+						<div class="col-sm-12">
+
+							<p>Copyright &copy; 2021 CNVD </p>
+						</div>
+				</div>
+			</div>
+		</section>
+
+	</body>
+</html>
